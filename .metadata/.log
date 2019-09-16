@@ -11,3 +11,8 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.egit.core 1 0 2019-09-16 09:51:13.891
 !MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.core.resources 2 2 2019-09-16 15:29:15.738
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-09-16 15:29:15.739
+!MESSAGE The project description file (.project) for 'Problem2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
