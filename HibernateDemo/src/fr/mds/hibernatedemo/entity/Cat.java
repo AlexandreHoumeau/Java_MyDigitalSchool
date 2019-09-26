@@ -1,13 +1,27 @@
 package fr.mds.hibernatedemo.entity;
 
-public class Cat {
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@SuppressWarnings("serial")
+@Entity
+
+public class Cat implements Serializable {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	
 	private String name; 
 	private String color;
 	
 
 	public Cat() {
-		super();
+		return ;
 	}
 	public long getId() {
 		return id;
@@ -26,6 +40,10 @@ public class Cat {
 	}
 	public void setColor(String color) {
 		this.color = color;
+	}
+	@Override
+	public String toString() {
+		return "Cat [id=" + id + ", name=" + name + ", color=" + color + "]";
 	}
 	
 	
